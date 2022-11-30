@@ -1,4 +1,7 @@
 extends Area2D
+class_name Player
+
+var lives = 5
 
 func _ready():
 	set_process(true)
@@ -13,4 +16,13 @@ func _process(delta):
 	set_position(position)
 pass
 
+func takeDamage(damage):
+	lives -= damage
+	if lives <= 0:
+		queue_free()
+	pass
 
+func _on_Player_area_entered(area):
+	if area.is_in_group("enemies"):
+		area.takeDamage(1)
+	pass
