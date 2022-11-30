@@ -36,23 +36,23 @@ script = ExtResource( 2 )
 velocity = Vector2( 0, 50 )
 
 [node name="ForeGround" type="Sprite" parent="."]
-position = Vector2( 0, 1.3e+07 )
-scale = Vector2( 70312.5, 62745.1 )
+position = Vector2( 0, -130 )
+scale = Vector2( 0.703125, 0.627451 )
 texture = ExtResource( 4 )
 centered = false
 script = ExtResource( 2 )
 velocity = Vector2( 0, 100 )
 
 [node name="ForeGround2" type="Sprite" parent="."]
-scale = Vector2( 70312.5, 62745.1 )
+scale = Vector2( 0.703125, 0.627451 )
 texture = ExtResource( 4 )
 centered = false
 script = ExtResource( 2 )
 velocity = Vector2( 0, 100 )
 
 [node name="ForeGround3" type="Sprite" parent="."]
-position = Vector2( 0, -1.3e+07 )
-scale = Vector2( 70312.5, 62745.1 )
+position = Vector2( 0, 130 )
+scale = Vector2( 0.703125, 0.627451 )
 texture = ExtResource( 4 )
 centered = false
 script = ExtResource( 2 )

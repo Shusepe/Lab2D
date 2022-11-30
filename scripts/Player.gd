@@ -5,11 +5,11 @@ func _ready():
 	pass
 
 func _process(delta):
-	var motion = (get_global_mouse_position().x - get_position().x)
+	var motion = (Utils.mouse_pos.x - get_position().x)
 	translate(Vector2(motion, 0))
-	var viewSize = get_viewport_rect().size
+	
 	var position = get_position()
-	position.x = clamp(position.x, 0+5, viewSize.x - 5)
+	position.x = clamp(position.x, 0+5, Utils.view_size.x - 5)
 	set_position(position)
 pass
 
