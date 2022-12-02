@@ -14,9 +14,9 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Blaster Faster"
+config/name="The Space in 1945 - Altamirano"
 run/main_scene="res://stages/stage_menu.tscn"
-config/icon="res://icon.png"
+config/icon="res://sprites/MidGround(2).png"
 
 [autoload]
 
